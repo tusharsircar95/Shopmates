@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+	<EditText
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:background="#FFFFFF"
+        android:id="@+id/email"
+        android:layout_above="@+id/password"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textCursorDrawable="@null"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true" />
+	
+	<EditText
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="#FFFFFF"
+        android:textCursorDrawable="@null"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        android:layout_above="@+id/forgotPassword"
+        android:layout_centerHorizontal="true" />
+	
+        
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#6a6869"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:id="@+id/forgotPassword"
+        android:layout_centerInParent="true" />
+    
+    <com.balysv.materialripple.MaterialRippleLayout 
+     		style="@style/RippleStyle"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentBottom="true"
+    		android:id="@+id/container">
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:background="#6a6869"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/signin" />
+    
+    </com.balysv.materialripple.MaterialRippleLayout>
+    
+</RelativeLayout>

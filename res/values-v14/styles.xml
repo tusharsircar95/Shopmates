@@ -1,0 +1,41 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+    
+    <style name="Theme.CustomTheme" parent="@android:style/Theme.Holo.Light">
+    <item name="android:actionBarStyle">@style/Theme.CustomTheme.ActionBar</item>
+    <item name="android:actionMenuTextColor">#686e7a</item>
+   	<item name="android:homeAsUpIndicator">@drawable/back_arrow_white</item>
+   	<item name="android:windowContentOverlay">@null</item>
+    
+	</style>
+	
+    <style name="Theme.CustomTheme.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+    <item name="android:background">#FFFFFF</item>
+    <item name="android:actionMenuTextColor">#686e7a</item>
+    <item name="android:homeAsUpIndicator">@drawable/back_arrow_white</item>
+    
+</style>
+
+    <style name="RippleStyle">
+        <item name="rippleOverlay">true</item>
+        <item name="rippleColor">#DDDDDD</item>
+        <item name="rippleAlpha">0.7</item>
+        <item name="rippleDimension">45dp</item>
+        <item name="rippleHover">true</item>
+        <item name="rippleDuration">200</item>
+        <item name="rippleFadeDuration">50</item>
+        <item name="rippleBackground">@android:color/transparent</item>
+        <item name="rippleDelayClick">true</item>
+        <item name="ripplePersistent">false</item>
+        <item name="rippleInAdapter">false</item>
+    </style>
+
+
+</resources>

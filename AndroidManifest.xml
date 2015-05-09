@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elevenestates.shopmates2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />   	
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	  
+	
+	
+	
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data
+   			android:name="com.google.android.maps.v2.API_KEY"
+  			android:value="AIzaSyCB20cSDJ6gdbTolwwAHyvTaBYQefkRF7k" /> 
+  			
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+ 
+            <!-- Points to searchable activity -->
+            <meta-data android:name="android.app.default_searchable"
+                android:value=".StoreSearchScreen" />
+ 
+            <!-- Points to searchable meta data -->
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+            
+        </activity>
+        
+        <activity
+            android:name=".MainScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="main_screen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".StartScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="start_screen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".SignUpScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="signUpScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".SignInScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="signInScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <activity
+            android:name=".Screen_1"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="screen_1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Screen_2"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="screen_2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Screen_3"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="screen_3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".AddressScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="addressScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".StoreScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="storeScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".EditAddressScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="editAddressScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".AddAddressScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="addAddressScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".AddStoreScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="addStoreScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".OptionsScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="optionsScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".OrderHistoryScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="orderHistoryScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".PasswordScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" >
+            <intent-filter>
+                <action android:name="passwordScreen" 
+                    android:screenOrientation="portrait"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".StoreSearchScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="storeSearchScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".TrackShopperScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="trackShopperScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".InvoiceScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="invoiceScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".TipScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" 
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="tipScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".HowItWorksScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="howItWorksScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".CreditsScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="creditsScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".AboutScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="aboutScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".OffersScreen"
+            android:label="@string/app_name"
+            android:logo="@android:color/transparent" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="offersScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <provider
+            android:name=".PlaceProvider"
+            android:authorities="com.elevenestates.shopmates2.PlaceProvider"
+            android:exported="false" />
+        
+        
+        
+        
+        
+    </application>
+
+</manifest>

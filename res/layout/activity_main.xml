@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".StoreSearchScreen" >
+ 
+    <TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="20dp"
+	    android:text="Please select a store from where you want your things"
+	    style="@android:style/TextAppearance.Medium"
+	    android:textColor="#686e7a"
+	    android:layout_centerHorizontal="true"
+	    android:id="@+id/textView"
+	    android:gravity="center" />
+    
+    <com.elevenestates.shopmates2.CustomAutoCompleteTextView
+        android:id="@+id/atv_places"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+		android:gravity="center"
+        android:background="#FFFFFF"
+        android:hint="@string/str_atv_places" />
+    
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:divider="@android:color/transparent"
+        android:layout_below="@+id/atv_places"
+        android:layout_above="@+id/bottom"
+        android:id="@+id/listView" />
+    
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:id="@+id/bottom"
+	    android:layout_alignParentBottom="true">
+	    
+	 <com.balysv.materialripple.MaterialRippleLayout 
+     		style="@style/RippleStyle"
+    		android:layout_width="match_parent"
+    		android:layout_height="fill_parent"
+    		android:id="@+id/container">
+	
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:text="Choose Custom Store"
+	    android:background="#686e7a"
+	    android:textColor="#FFFFFF" 
+	    android:layout_alignParentBottom="true" 
+	    style="@android:style/TextAppearance.Medium"
+	    android:id="@+id/customStore" />
+	
+	</com.balysv.materialripple.MaterialRippleLayout>
+	
+	
+		    
+	</RelativeLayout>
+    
+    
+    
+ 
+</RelativeLayout>

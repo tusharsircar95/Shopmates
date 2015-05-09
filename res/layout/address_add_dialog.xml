@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    
+    
+    
+    <EditText
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tag"
+        android:hint="Place Details\nEx. B-224 2nd Floor,A-34 1st Floor"
+        style="@android:style/TextAppearance.Medium"
+		android:layout_margin="8dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#FFFFFF"/>
+    
+    <EditText
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details"
+        android:layout_below="@+id/tag"
+        android:hint="Street Address\nEx. Preet Vihar, Vasant Kunj"
+        style="@android:style/TextAppearance.Medium"
+		android:layout_margin="8dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#FFFFFF"/>
+    
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:divider="@android:color/transparent"
+        android:layout_below="@+id/pincode"
+        android:layout_above="@+id/done"
+        android:visibility="gone"
+        android:id="@+id/listView" />
+    
+    <EditText
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:id="@+id/pincode"
+        android:hint="Pincode\nEx. 110092"
+        style="@android:style/TextAppearance.Medium"
+		android:layout_margin="8dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="#FFFFFF"/>
+
+    
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Done"
+        android:layout_alignParentBottom="true"
+        style="@android:style/TextAppearance.Medium"
+        android:textColor="#FFFFFF"
+        android:background="#686e7a"
+        android:gravity="center"
+        android:id="@+id/done" />
+
+</RelativeLayout>

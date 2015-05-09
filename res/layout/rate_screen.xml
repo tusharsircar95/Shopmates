@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate Your Shopper"
+        style="@android:style/TextAppearance.Large"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/header"
+        android:textColor="#6a6869" />
+    
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Tushar Sircar"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/information"
+        android:textColor="#6a6869" />
+    
+    
+     <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/container"
+        android:layout_centerHorizontal="true" />
+    
+    <com.balysv.materialripple.MaterialRippleLayout 
+     		style="@style/RippleStyle"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentBottom="true"
+    		android:id="@+id/container">
+	
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:text="Done"
+	    android:background="#686e7a"
+	    android:textColor="#FFFFFF" 
+	    android:layout_alignParentBottom="true" 
+	    android:id="@+id/done" />
+	
+	</com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/information"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:id="@+id/image"
+        android:src="@drawable/store_pointer" />
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFFF">
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/bottom">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER"
+                android:padding="15dp"
+                android:textColor="#888888"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/orderHeader"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                style="@android:style/TextAppearance.Medium" />
+            
+            <TextView
+            	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" 
+                android:textColor="#686e7a"
+                android:id="@+id/orderText"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FROM"
+                android:padding="5dp"
+                android:id="@+id/fromHeader"
+                style="@android:style/TextAppearance.Medium"
+                android:textColor="#888888"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="5dp" />
+            
+            <TextView
+            	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" 
+                android:textColor="#686e7a"
+                android:id="@+id/fromText"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TO"
+                android:padding="15dp"
+                android:id="@+id/toHeader"
+                style="@android:style/TextAppearance.Medium"
+                android:textColor="#888888"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="5dp" />
+            
+            <TextView
+            	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" 
+                android:textColor="#686e7a"
+                android:id="@+id/toText"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+           
+        </LinearLayout>
+    </ScrollView>
+    
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:id="@+id/bottom"
+	    android:layout_alignParentBottom="true">
+	
+	<com.balysv.materialripple.MaterialRippleLayout 
+     		style="@style/RippleStyle"
+    		android:layout_width="match_parent"
+    		android:layout_height="fill_parent"
+    		android:id="@+id/container">
+	
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:text="Place Order"
+	    style="@android:style/TextAppearance.Medium"
+	    android:background="#686e7a"
+	    android:textColor="#FFFFFF" 
+	    android:layout_alignParentBottom="true" 
+	    android:id="@+id/placeOrder" />
+	
+	</com.balysv.materialripple.MaterialRippleLayout>
+		    
+	</RelativeLayout>
+        
+
+</RelativeLayout>

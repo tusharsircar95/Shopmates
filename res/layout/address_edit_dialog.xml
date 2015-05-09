@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    
+    
+    
+    <EditText
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tag"
+        style="@android:style/TextAppearance.Medium"
+		android:layout_margin="8dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#FFFFFF"/>
+    
+    <EditText
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_below="@+id/tag"
+		android:layout_margin="8dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#FFFFFF"/>
+    
+    <EditText
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pincode"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_below="@+id/details"
+		android:layout_margin="8dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="#FFFFFF"/>
+
+    
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Done"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:background="#686e7a"
+        android:gravity="center"
+        android:id="@+id/done" />
+
+</RelativeLayout>

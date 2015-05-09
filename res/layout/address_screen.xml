@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Tap to edit"
+	    style="@android:style/TextAppearance.Medium"
+	    android:layout_centerHorizontal="true"
+	    android:gravity="center"
+	    android:textColor="#666666"
+	    android:layout_margin="15dp"
+	  	android:id="@+id/helpText" />
+    
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/helpText"
+        android:layout_above="@+id/bottom"
+        android:id="@+id/addressList"
+        android:divider="@android:color/transparent"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bottom" >
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Add New Address"
+        android:layout_centerVertical="true"
+        style="@android:style/TextAppearance.Medium"
+        android:gravity="center"
+        android:textColor="#686e7a"
+        android:id="@+id/addAddress" />
+        
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:background="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/addAddress"
+        android:padding="5dp" />
+    
+    </RelativeLayout>
+
+</RelativeLayout>

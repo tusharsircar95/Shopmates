@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/heading"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="About Us"
+                android:visibility="gone"
+                android:textColor="#686e7a" />
+
+            <TextView
+                android:id="@+id/header1"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="15dp"
+                android:text="Our Motive"
+                android:textColor="#686e7a" />
+
+            <TextView
+                android:id="@+id/para1"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="15dp"
+                android:text="We have set out on a mission- transforming the way local goods move around a city by enabling  anyone to get any product delivered in under one hour. We are building a revolutionary urban logistics and on-demand delivery platform which can purchase and deliver goods from any restaurant or store in a city."
+                android:textColor="#686e7a" />
+
+            <TextView
+                android:id="@+id/header2"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="15dp"
+                android:text="Contact Us"
+                android:textColor="#686e7a" />
+
+            <TextView
+                android:id="@+id/para2"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="15dp"
+                android:text="hello@theshopmates.com\nThe Shopmates\n273, Parnashree Pally\nBehala- 700060 "
+                android:textColor="#686e7a" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+    
+	
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate Your Shopper"
+        style="@android:style/TextAppearance.Large"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/title"
+        android:textColor="#6a6869" />
+    
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/information"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:id="@+id/shopperImage"
+        android:src="@drawable/store_pointer" />
+    
+   
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Tushar Sircar"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/information"
+        android:textColor="#6a6869" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/information"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/currentRatingLayout" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:textColor="#6a6869"
+            style="@android:style/TextAppearance.Medium"
+            android:id="@+id/currentRating" />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star" />
+            
+        
+     </LinearLayout>
+    
+    
+    
+     <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/currentRatingLayout"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:textColor="#686e7a"
+        android:id="@+id/tip"
+        android:hint="Estimated Tip: INR 60" />
+    
+    
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/container"
+        android:layout_centerHorizontal="true" />
+    
+    <com.balysv.materialripple.MaterialRippleLayout 
+     		style="@style/RippleStyle"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentBottom="true"
+    		android:id="@+id/container">
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:background="#6a6869"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/payTip" />
+    
+    </com.balysv.materialripple.MaterialRippleLayout>
+    
+</RelativeLayout>

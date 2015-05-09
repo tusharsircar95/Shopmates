@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+   
+   <ImageButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_drawer"
+       android:layout_alignParentLeft="true"
+       android:layout_centerVertical="true"
+       android:id="@+id/drawerButton" 
+       android:background="#FFFFFF"/>
+   
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOPMATES"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        style="@android:style/TextAppearance.Large"
+        android:id="@+id/title"
+        android:textColor="#686e7a"
+        android:padding="10dp" />
+   
+   </RelativeLayout>
+    
+    
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:text="Type Your Order"
+        android:gravity="center"
+        style="@android:style/TextAppearance.Medium"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:padding="50dp"
+        android:id="@+id/next"
+        android:background="@drawable/custom_grey_round_background" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#686e7a"
+        android:text="How It Works?"
+        style="@android:style/TextAppearance.Medium"
+        android:id="@+id/working"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:textStyle="bold" />
+    
+
+</RelativeLayout>
+	
+  

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:id="@+id/tabs"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Past"
+            android:id="@+id/ongoing"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#686e7a"
+            android:background="#FFFFFF" />
+         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Past Orders"
+            android:visibility="gone"
+            android:id="@+id/past"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/curved_light_grey_button" />
+            
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="No past orders!"
+        style="@android:style/TextAppearance.Large"
+        android:textColor="#686e7a"
+        android:layout_centerInParent="true"
+        android:id="@+id/info" 
+        android:visibility="gone" />
+    
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/tabs"
+        android:divider="@android:color/transparent"
+        android:id="@+id/ongoingList" />
+    
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_below="@+id/tabs"
+        android:divider="@android:color/transparent"
+        android:id="@+id/pastList" />
+
+</RelativeLayout>

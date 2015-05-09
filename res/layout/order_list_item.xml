@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFFF"
+    android:padding="15dp">
+    
+    <TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#FFFFFF"
+	    android:layout_alignParentLeft="true"
+	    android:textColor="#686e7a"
+	    style="@android:style/TextAppearance.Medium"
+	    android:layout_margin="10dp" 
+	    android:id="@+id/order" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Shopper"
+        android:id="@+id/trackShopper"
+        android:textColor="#686e7a"
+        android:layout_below="@+id/order"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_margin="3dp"
+        android:gravity="center" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invoice"
+        android:id="@+id/viewInvoice"
+        android:textColor="#686e7a"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:layout_below="@+id/order"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/trackShopper"
+        android:gravity="center" />
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/form"
+        android:layout_above="@+id/bottom">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            
+    <EditText
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:id="@+id/name"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:background="#FFFFFF"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_centerHorizontal="true" 
+        android:textCursorDrawable="@null"/>
+    
+    <EditText
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:id="@+id/email"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:background="#FFFFFF"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_centerHorizontal="true"
+        android:textCursorDrawable="@null" />
+    
+    <EditText
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Phone No."
+        android:id="@+id/phoneno"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:background="#FFFFFF"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_centerHorizontal="true" 
+        android:textCursorDrawable="@null"/>
+    
+    <EditText
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:layout_below="@+id/phoneno"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:background="#FFFFFF"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_centerHorizontal="true"
+        android:textCursorDrawable="@null" />
+    
+    <EditText
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password Again"
+        android:id="@+id/confirmpassword"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:background="#FFFFFF"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_centerHorizontal="true"
+        android:textCursorDrawable="@null" />
+    
+		
+    
+    	</LinearLayout>
+    </ScrollView>
+    
+    
+    
+    
+    
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:id="@+id/bottom"
+	    android:layout_alignParentBottom="true">
+        
+        <com.balysv.materialripple.MaterialRippleLayout 
+     		style="@style/RippleStyle"
+    		android:layout_width="match_parent"
+    		android:layout_height="fill_parent"
+    		android:id="@+id/container">
+	
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:text="Sign Up"
+	    android:background="#686e7a"
+	    android:textColor="#FFFFFF" 
+	    android:layout_alignParentBottom="true" 
+	    android:id="@+id/signUp" />
+	
+			</com.balysv.materialripple.MaterialRippleLayout>
+	
+		    
+	</RelativeLayout>
+
+</RelativeLayout>
